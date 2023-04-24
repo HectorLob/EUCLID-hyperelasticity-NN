@@ -40,6 +40,7 @@ else:
 # DATA:
 #=====================================================================
 for loadstep in loadsteps:
+    print('Loading data for loadstep '+str(loadstep)+'...')
 
     data_path = get_data_path(fem_dir, fem_material,
                               noise_level, loadstep)

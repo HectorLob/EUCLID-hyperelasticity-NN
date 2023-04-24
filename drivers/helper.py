@@ -15,10 +15,10 @@ def get_data_path(fem_dir, fem_material, noise_level, loadstep):
 	# Add fem_material
 	prefix = prefix + fem_material
 
-
 	fem_path = prefix+'/'+str(loadstep)+'/'
 
 	return fem_path
+
 
 def exportTensor(folder,name,data,cols, header=True):
 	# print(folder)
@@ -29,6 +29,7 @@ def exportTensor(folder,name,data,cols, header=True):
 		df.columns = cols
 	# print(name+".csv")
 	df.to_csv(folder+'/'+name+".csv",header=header,index=False)
+
 
 def exportList(folder,name,data):
 	# print(folder)
