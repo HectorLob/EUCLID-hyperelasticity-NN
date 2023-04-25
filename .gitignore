@@ -1,6 +1,8 @@
 core/__pycache__/
-results/
+#results/
 *.pyc
 *.png
 *.pdf
 *.pth
+drivers/results/
+#drivers/result_analysis.ipynb
