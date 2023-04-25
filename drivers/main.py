@@ -7,6 +7,11 @@ sys.path.insert(0, '../')
 from core import *
 #config
 from config import *
+
+if 'google.colab' in sys.modules: #override config
+    cuda = 0
+    output_dir = '/content/drive/MyDrive/EUCLID/results' # Google Drive must be mounted
+    
 #CUDA
 initCUDA(cuda)
 #supporting files
