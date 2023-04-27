@@ -1,16 +1,13 @@
 # Set to 0 to use GPU-accelerated training
-cuda = -1
+cuda = 0
 
 dim = 2
 num_nodes_per_element = 3
 voigt_map = [[0,1],[2,3]]
 
 fem_dir = '../fem-data/'
-output_dir = 'results'
-
-if 'google.colab' in sys.modules: #override config
-    cuda = 0
-    output_dir = '/content/drive/MyDrive/EUCLID/results' # Google Drive must be mounted
+#output_dir = 'results'
+output_dir = '/content/drive/MyDrive/EUCLID/results' # If in colab, mount drive
 
 # Dataset settings
 normalization_flag = False
